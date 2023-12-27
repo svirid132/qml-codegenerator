@@ -1,0 +1,16 @@
+#version 0.01
+#project contour
+
+object Message
+autor: QString( prop = mrwn )
+count: int( prop = mrn; init = 5 )
+text: Text*( prop = mrwn; init = new(this) )
+end
+
+object Text
+text: QString( prop = mrwn )
+end
+
+object Envirment
+documentDir: QString( prop = rn )
+end
